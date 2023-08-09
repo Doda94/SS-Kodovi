@@ -1,0 +1,133 @@
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+#include <string>
+using namespace std;
+
+long long n,q,y, x[1000005],maxx,minx=1000005;
+int lo, hi, mid;
+
+int main () {
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
+
+cin >> n >> q;
+
+for (int i = 0; i<n; i++){
+	cin >> x[i];
+	if (x[i] > maxx)
+		maxx = x[i];
+	if (x[i] < minx)
+		minx = x[i];
+} sort (x,x+n);
+
+for (int i = 0; i<q; i++){
+	cin >> y; bool ok=0;
+	if (y << minx || y > maxx) cout << "NE\n";
+	else{
+		lo=0; hi=n;
+		while(lo<=hi and ok){
+			mid=(lo+hi)/2;
+			if (x[mid] > y) lo=mid+1;
+			else if (x[mid] < y) hi=mid-1;
+			else {
+				cout << "DA";
+				ok=1;
+			}
+		}
+		if (!ok) cout << "NE";
+	}
+}
+
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+#include <string>
+using namespace std;
+
+long long n,q,y[1000005],x[1000005],maxx,maxy,minx=1000005,miny;
+int ans[1000005];
+
+int main () {
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
+
+cin >> n >> q;
+
+for (int i = 0; i<n; i++){
+	cin >> x[i];
+	if (x[i] > maxx)
+		maxx = x[i];
+	if (x[i] < minx)
+		minx = x[i];
+}
+for (int i = 0; i<q; i++)
+{
+	cin >> y[i];
+	if (y[i] > maxy)
+		maxy = y[i];
+}
+sort (x,x+n);
+sort (y,y+q);
+
+int pox=0;
+int poy=0;
+
+while(pox!=n and poy!=q){
+	if (y[poy].first < x[pox]) poy++;
+	else if (y[poy].first > x[pox]) pox++;
+	else{
+		ans[y[poy].second]=1;
+		poy++;
+	}
+}
+
+for(int i=0; i<q; i++)
+	cout << ((ans[i])?"DA\n":"NE\n";
+
+return 0;
+}

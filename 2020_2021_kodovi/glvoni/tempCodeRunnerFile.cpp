@@ -1,0 +1,2 @@
+    if (a>n)
+        continue;

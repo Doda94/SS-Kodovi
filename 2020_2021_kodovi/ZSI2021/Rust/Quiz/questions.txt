@@ -1,0 +1,10 @@
+{
+  "tekst_pitanja": "Koji je prvi dan u tjednu?",
+  "odgovori": [
+    "Ponedjeljak",
+    "Utorak",
+    "Srijeda",
+    "Cetvrtak"
+  ],
+  "tocan": 1
+}

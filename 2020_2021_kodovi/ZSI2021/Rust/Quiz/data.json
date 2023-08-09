@@ -1,0 +1,24 @@
+{
+  "pitanja": [
+    {
+      "tekst_pitanja": "Koji je prvi dan u tjednu?",
+      "odgovori": [
+        "Ponedjeljak",
+        "Utorak",
+        "Srijeda",
+        "Cetvrtak"
+      ],
+      "tocan": "Ponedjeljak"
+    },
+    {
+      "tekst_pitanja": "Koliko ima pitanja u kvizu?",
+      "odgovori": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "tocan": "2"
+    }
+  ]
+}
