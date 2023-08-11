@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Naslov</title>
+    </head>
+
+    <body>
+        <div>Neki bezveve tekst</div>
+        <a href="/aplikacija">Pocetna</a>
+        <form action="treca" method="POST">
+        {% csrf_token %}
+        <div>Username<input type="text" name="username"></div>
+        <div>Password<input type="password" name="password"></div>
+        <button type="submit">SUBMIT</button>
+        </form>
+    </body>
+
+
+</html>

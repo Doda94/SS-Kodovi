@@ -1,0 +1,4 @@
+t.mainloop=da se program ne ugasi
+Label
+Button
+Entry-dijaloski prozor sa upisivanje teksta

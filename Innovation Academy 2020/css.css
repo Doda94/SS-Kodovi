@@ -1,0 +1,35 @@
+h1{
+    color: blue
+}
+.headers{
+    color: burlywood
+}
+#h2{
+    text-decoration: underline;
+}
+p{
+    font-size: 20;
+}
+b{
+    color: blue
+}
+img{
+    border: 3px;
+    margin: 10px;
+}
+li{
+    color: green;
+}
+ol{
+    padding-left: 50px;
+}
+table{
+    border: 1;
+}
+form{
+    border:dashed 5px;
+    margin: 50px;
+}
+th{
+    background-color:blue;
+}
